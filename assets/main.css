@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+    font-weight: 500;
+}
+
+body {
+    color: #000;
+    margin: 0px;
+    background-color: #0a0417;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.img-wrapper h1 {
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.img-wrapper img {
+    width: 100%;
+    height: auto;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 5px;
+    border: 2px solid #ffffff20;
+    padding: 20px;
+    border-radius: 10px;
+    margin-block: 20px;
+}
+
+.header label {
+    color: #ffffff67;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-transform: capitalize;
+}
+
+.header:focus-within {
+    border: 2px solid #7757ff;
+}
+
+.header:focus-within label {
+    color: #7757ff;
+}
+
+.input {
+    background-color: #1d1728;
+    display: flex;
+    width: 100%;
+    padding: 15px;
+    border: 0px;
+    color: var(--color-2);
+    font-size: inherit;
+    position: relative;
+    z-index: 99999999;
+    transition: all .1s;
+    outline: none;
+    resize: none;
+    color: #fff;
+}
+
+.input::placeholder {
+    color: #ffffff67;
+}
+
+.add-button {
+    border: 0px;
+    background-color: transparent;
+    font-weight: 600;
+    font-size: 17px;
+    text-wrap: nowrap;
+    padding: 12px;
+}
+
+.todos {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-block: 30px;
+}
+
+.todos p {
+    color: #ffffff67;
+    font-size: 18px;
+    font-family: sans-serif;
+    text-align: center;
+    text-transform: capitalize;
+    margin: 0px;
+}
+
+.todo-item {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    border-left: 3px solid transparent;
+    border-bottom: 1px solid #ffffff20;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+    background-color: #352d4943;
+}
+
+.todo-item:hover {
+    border-left: 3px solid #7757ff;
+    background-color: #352d49;
+}
+
+.delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0px;
+    background-color: crimson;
+    font-size: 0.8rem;
+    text-wrap: nowrap;
+    min-width: 40px;
+    min-height: 40px;
+    padding: 8px 12px;
+    border-radius: 8px;
+    color: #fff;
+    cursor: pointer;
+
+}
